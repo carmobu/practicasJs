@@ -1,6 +1,6 @@
 /* 
 
-1R EJERCICIO:
+1) EJERCICIO:
 Super ejercicio: Preguntar nombre al usuario y saludarlo por su nombre.
 
 CODIGO:
@@ -9,7 +9,7 @@ document.write("Hola " + nombreUsuario + " Bienvenido.");
 
 <---------------------------------------------------------------------------------->
 
-2DO EJERCICIO:
+2) EJERCICIO:
 Preguntar nombre al usuario y saludarlo por su nombre.
 Si el usuario no escribe su nombre saludar: "Hola, desconocido."
 
@@ -23,7 +23,7 @@ if (nombreUsuario == "") {
 
 <---------------------------------------------------------------------------------->
 
-3R EJERCICIO:
+3) EJERCICIO:
 Leer nombre y apellido, saludar por nombre y apellido.
 
 
@@ -33,7 +33,7 @@ document.write("Hola " + nombreYapellido + " bienvenido.")
 
 <---------------------------------------------------------------------------------->
 
-4TO EJERCICIO:
+4) EJERCICIO:
 Pregunte al usuario si desea continuar, responder con hola o adiós.
 
 
@@ -48,7 +48,7 @@ if (continuar === "si") {
 
 <---------------------------------------------------------------------------------->
 
-5TO EJERCICIO
+5) EJERCICIO
 Leer nombre y edad, Mostrar si es o no mayor de edad.
 
 codigo:
@@ -64,7 +64,7 @@ if (edad >= 18) {
 
 <---------------------------------------------------------------------------------->
 
-6TO EJERCICIO:
+6) EJERCICIO:
  Leer un rol, (admin, ventas, cliente), acceso de acuerdo al rol.
 
 CODIGO:
@@ -81,7 +81,7 @@ if (rol === "admin") {
 }
 
 <---------------------------------------------------------------------------------->
-7MO EJERCICIO:
+7) EJERCICIO:
 Leer un número, mostrar el doble de n.
 
 CODIGO:
@@ -89,7 +89,7 @@ var numero = prompt("ingrese un numero")
 document.write(numero*2)
 
 <---------------------------------------------------------------------------------->
-8VO EJERCICIO:
+8) EJERCICIO:
 Leer un número, mostrar la mitad de n.
 
 CODIGO:
@@ -98,7 +98,7 @@ document.write(numero/2)
 
 
 <---------------------------------------------------------------------------------->
-9NO EJERCICIO:
+9) EJERCICIO:
 Leer un número, mostrar si es positivo, negativo o cero.
 
 CODIGO:
@@ -112,7 +112,7 @@ if (numero > 0) {
 }
 
 <---------------------------------------------------------------------------------->
-9NO EJERCICIO:
+10) EJERCICIO:
 Leer un número, mostrar si es par o impar.
 
 CODIGO:
@@ -125,7 +125,7 @@ if (numero % 2 === 0) {
 
 
 <---------------------------------------------------------------------------------->
-10MO EJERCICIO:
+11) EJERCICIO:
 Leer dos números, mostrar el mayor.
 
 CODIGO:
@@ -144,7 +144,7 @@ if (numero1 > numero2) {
 
 
 <---------------------------------------------------------------------------------->
-11VO EJERCICIO:
+12) EJERCICIO:
 // Leer dos números, mostrar operaciones básicas (+,-,x,/,%,cuadrado).
 
 
@@ -172,7 +172,7 @@ document.write("Cuadrado del segundo número: " + cuadrado2 + " ");
 
 
 <---------------------------------------------------------------------------------->
-12VO EJERCICIO:
+13) EJERCICIO:
 // Leer dos números, mostrar la suma dividido en la resta.
 
 
@@ -199,20 +199,15 @@ if (resta < 0) {
 */
 
 
+function saludar() {
+    let nombre = prompt("Ingrese su nombre");
+    let apellido = prompt("Ingrese su apellido");
 
+    if (nombre && apellido) {
+        document.write(`Hola ${nombre} ${apellido}`);
+    } else {
+        document.write('Hola desconocido');
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+saludar();
